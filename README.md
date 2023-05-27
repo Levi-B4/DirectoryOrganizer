@@ -1,7 +1,7 @@
 # DirectoryOrganizer (Still in production)
 
 ## Description
-Organizes a directory by grouping files into sub-directories.
+Organizes a directory by grouping files into sub-directories and can be ran directly or ran from the command line to pass a directory path as an argument.
 
 ## How to Run
 - Install python 3.11 or later
