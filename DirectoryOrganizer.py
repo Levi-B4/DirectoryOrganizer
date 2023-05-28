@@ -70,16 +70,17 @@ if str.lower(directoryInput) != "this":
 
 directory = os.getcwd()
 
+
     ## Get directory name and list of files in directory
 directoryName = os.path.basename(directory)
 fileNames = os.listdir(directory)
 
 print(f"Organizing {directoryName}")
 subDirectoriesDictionary = OrganizeDirectoryIntoDictionary(directory, fileNames)
-displayOrganizationPreview(subDirectoriesDictionary)
 
 
     ## finalize organization
+displayOrganizationPreview(subDirectoriesDictionary)
 confirm = input("Confirm organization? (y/n)\n")
 while str.lower(confirm) != "y" and str.lower(confirm) != "n":
     confirm = input("Please enter 'y' to confirm organization or 'n' to cancel the organization.\n")
